@@ -1,0 +1,33 @@
+constants.
+coin_10p.
+chocolate.
+lollipop.
+s0.
+s10.
+s20.
+
+given.
+action(0,coin_10p).
+action(s(0),coin_10p).
+action(s(s(0)),chocolate).
+action(s(s(s(0))),lollipop).
+action(s(s(s(s(0)))),coin_10p).
+action(s(s(s(s(s(0))))),lollipop).
+counter(0,s0).
+
+forall(t, (counter(t,s0) & (action(t,chocolate) v action(t,lollipop)) => counter(s(t),s0))).
+forall(t, (counter(t,s0) & action(t,coin_10p) => counter(s(t),s10))).
+forall(t, (counter(t,s10) & action(t,chocolate) => counter(s(t),s10))).
+forall(t, (counter(t,s10) & action(t,lollipop) => counter(s(t),s0))).
+forall(t, (counter(t,s10) & action(t,coin_10p) => counter(s(t),s20))).
+forall(t, (counter(t,s20) & action(t,chocolate) => counter(s(t),s0))).
+forall(t, (counter(t,s20) & action(t,lollipop) => counter(s(t),s10))).
+forall(t, (counter(t,s20) & action(t,coin_10p) => counter(s(t),s20))).
+
+prove.
+exists(t, action(t,lollipop) & counter(t,s0)).
+
+
+
+
+

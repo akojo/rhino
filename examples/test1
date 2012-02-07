@@ -1,0 +1,2 @@
+prove.
+~(p(a) & ~q(a) & forall(x, p(x) => q(x))).

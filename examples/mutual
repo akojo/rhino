@@ -1,0 +1,3 @@
+given.
+prove.
+(p => q) & (q => p) <=> p <=> q.

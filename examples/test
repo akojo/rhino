@@ -1,0 +1,4 @@
+given.
+a(t).
+prove.
+exists(x, a(x)).

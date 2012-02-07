@@ -1,0 +1,4 @@
+given.
+forall(x, i(x) => e(x)) & exists(x, i(x) & k(x)).
+prove.
+exists(x, e(x) & k(x)).

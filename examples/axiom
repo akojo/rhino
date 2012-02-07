@@ -1,0 +1,4 @@
+given.
+(a => b).
+prove.
+(b => c) => (a => c).
