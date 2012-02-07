@@ -53,32 +53,25 @@ Rhino supports all logical operators and also universal and existential
 quantifiers. The operators are, in precedence order (from lowest to highest):
 
 * `forall`
-
   The universal quantifier. To use it as a prefix operator, as is customary in
   logical formulas, the quantifier must be written as `forall(var, <formula>)`.
   You can also use infix notation `var forall <formula>`. When printing
   formulas, Rhino uses infix notation.
 
 * `exists`
-
   The existential quantifier. Is used as the `forall` quantifier.
 
 * `<=>`
-
   Equivalence.
 
 * `=>`
-
   Implication.
 
 * `v`
-
   Disjunction.
 
 * `&`
-
   Conjunction.
 
 * `~`
-
   Negation.
