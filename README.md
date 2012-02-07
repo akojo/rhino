@@ -115,15 +115,15 @@ Resolving set:
 ```
 
 First Rhino prints the formulas it read from the input file, then it prints a
-list of fact that were derived by transforming the original formulas into
+list of facts that were derived by transforming the original formulas into
 discjuntive form.
 
-After that, Rhino prints all the steps it uses when trying to prove the given
+After that Rhino prints each step it uses when trying to prove the given
 statement from the given facts. For each step, Rhino prints an indented line
-showing which clauses it is resolving, and possibly Most General Unifier when
+showing which clauses it is resolving, and possibly a Most General Unifier when
 using predicates. Then it prints as the next step a new clause that was derived
 from the clauses to be resolved.
 
 Rhino continues resolving clauses until it can derive an empty clause, in which
 case the statement to be proved has been successfully proven, or until it cannot
-find any more resolvable clauses and states that there is no solution.
+find any more resolvable clauses, which means that there was no solution.
